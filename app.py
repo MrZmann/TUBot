@@ -11,9 +11,15 @@ app = Flask(__name__)
 def webhook():
     data = request.get_json()
 
+    
     if data['name'] != 'sassyBot':
         msg = '{}, you sent "{}".'.format(data['name'], data['text'])
         send_message(msg)
+
+    if data['name'] == 'Travis Mongoven':
+        msg = 'Bugga to you sir'
+        send_message(msg)
+
     return "ok", 200
 
 def send_message(msg):
