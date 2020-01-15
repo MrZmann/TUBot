@@ -31,10 +31,10 @@ def webhook():
                 msg += "take a union mandated bathroom break..."
         else:
             msg += "What a lovely time to "
-                if(random.random() < .9):
-                    msg += "congratulate yourself for being awesome :)"
-                else:
-                    msg += "rock climb!"
+            if(random.random() < .9):
+                msg += "congratulate yourself for being awesome :)"
+            else:
+                msg += "rock climb!"
         send_message(msg)
 
     elif(random.random() < .01):
@@ -112,7 +112,7 @@ def webhook():
 
     elif data['name'] == 'Third Alison':
         if(random.random() < .4):
-            if(random.random() < .4)
+            if(random.random() < .4):
                 send_message("Arizona has joined the group")
             else:
                 send_message("Where’s my horse at, yeah! Where’s my horse at?")
@@ -145,7 +145,6 @@ def send_message(msg):
             'text' : msg,
            }
     request = Request(url, urlencode(data).encode())
-    json = urlopen(request).read().decode()ef webhook():
-    data = request.get_json()
+    json = urlopen(request).read().decode()
 
 
