@@ -17,13 +17,13 @@ def webhook():
     if(data['name'] != 'TUBot!'):
         if(random.random() < .3):
             beginning = ["You are ", "Keep being "]
-            end = ["awesome!", "cool :)", "beautiful xoxo", "lovely <3", "wonderful", "magnificent", "marvelous", "incredible", "brilliant", "fine ;)", "outstanding", "sensational", "terrific", "wondrous", "divine", "groovy", "an amazing friend :)", "one smart cookie","perfect", "one of a kind", "a great example to our section, a true symbol of moral fortitude and compassion", "the reason someone smiles today", "extraordinary", "something special", "the true hero among us", "inspirational", "the TUBA! player we all aspire to be", "my spirit animal"]
+            end = ["awesome!", "cool :)", "beautiful xoxo", "lovely <3", "wonderful", "magnificent", "marvelous", "incredible", "brilliant", "fine ;)", "outstanding", "sensational", "terrific", "wondrous", "divine", "groovy", "an amazing friend :)", "one smart cookie","perfect", "one of a kind", "a great example to our section, a true symbol of moral fortitude and compassion", "the reason someone smiles today", "extraordinary", "something special", "the true hero among us", "inspirational", "the TUBA! player we all aspire to be", "my spirit animal", "dandy"]
             send_message("HEY {}".format(data['name'])
             send_message(random.choice(beginning) + random.choice(end))
 
         if('rehearsal' in data['text'].lower()):
             if(random.random() < .9):
-                msgs = ['REHEARSAL? NO THANKS!', 'Sorry when is rehearsal again? I\'m pretty sure there\'s a union mandated bathroom break at that time', 'Pfft, rehearsal? Bug right off', 'Wait did you say Rehearsal? Sorry I don\'t know who that is...', 'Yeah, hate to break it to you. We don\'t rehearse around these parts.', 'I wish I could just kick anyone who mentioned rehearsals straight from the groupchat...', 'Please do not say that word, it gives me anxiety', '*shudder*']
+                msgs = ['REHEARSAL? NO THANKS!', 'Sorry when is rehearsal again? I\'m pretty sure there\'s a union mandated bathroom break at that time', 'Pfft, rehearsal? Bug right off', 'Wait did you say Rehearsal? Sorry I don\'t know who that is...', 'Yeah, hate to break it to you. We don\'t rehearse around these parts.', 'I wish I could just kick anyone who mentioned rehearsal straight from the groupchat...', 'Please do not say that word, it gives me anxiety', '*shudder*']
                 send_message(random.choice(msgs))
 
         if('bitch' in data['text'].lower()):
@@ -31,7 +31,7 @@ def webhook():
             send_message(random.choice(msgs))
 
         if('bean' in data['text'].lower()):
-            msgs = ['BEANS!', "Where the beans at? @Alison Van Alen", "CODE BROWN, I REPEAT CODE BROWN. THIS IS A BEAN ALERT", "'Beans,' I reflect fondly. 'The best thing that's happened to humanity since Whiteclaw...'", "According to Urban Dictionary, a bean is a \"CRAZY, fun loving person... guarenteed to make you smile\" @Alison", "You know Dasher and Dancer and Prancer and Vixen. Comet and Cupid and Donner and Blitzin. But do you recall the most wonderful vegetable of all? BEANS!", "Beans, like peanuts are LEGUMES!", "You know what they say: a bean a day keeps the directors away!"]
+            msgs = ['BEANS!', "Where the beans at? @Alison Van Alen", "CODE BROWN, I REPEAT CODE BROWN. THIS IS A BEAN ALERT", "'Beans,' I reflect fondly. 'The best thing that's happened to humanity since Whiteclaw...'", "According to Urban Dictionary, a bean is a \"CRAZY, fun loving person... guarenteed to make you smile\" @Alison <3", "You know Dasher and Dancer and Prancer and Vixen. Comet and Cupid and Donner and Blitzin. But do you recall the most wonderful vegetable of all? BEANS!", "Beans, like peanuts are LEGUMES", "You know what they say: a bean a day keeps the directors away!"]
             send_message(random.choice(msgs))
 
         if any(x in data['text'].lower() for x in ['hannah', 'galus','gall']):
@@ -50,7 +50,7 @@ def webhook():
             d = datetime.now()
             msg = 'It is currently '
             msg += d.strftime("%B %d, %Y") + " at " + d.strftime("%H:%M:%S") + ". "
-            if(random.random() < .1):
+            if(random.random() < .5):
                 msg += "Perfect time to "
                 if(random.random() < .5):
                     msg += "rock climb!"
@@ -76,7 +76,7 @@ def webhook():
 
         if data['name'] == 'Great leader of our section and our nation':
             if(random.random() < .7):
-                msgs = ['Criminal gangg', 'Yes sir yes sir', 'Bugga to all of y\'all', '*CLICK*', 'Suck my deck', 'Y\'all are bugs', 'Bugger']
+                msgs = ['Criminal gangg', 'Yes sir yes sir', 'Bugga to all of y\'all', '*CLICK*', 'Suck my deck', 'Y\'all are bugs', 'Bugger', 'Remove yourself', 'Bug right off']
                 send_message(random.choice(msgs))
 
         elif data['name'] == 'Alison Van Alen':
@@ -85,9 +85,9 @@ def webhook():
                 send_message(random.choice(msgs))
 
         elif data['name'] == 'Daniel Weber':
-            if(random.random() < .4):
-                msg = 'Daniel, you don’t seem like yourself. Are you in need of a nice refreshing beverage: https://www.whiteclaw.com/'
-                send_message(msg)
+            if(random.random() < .7):
+                msgs = ['Daniel, you don’t seem like yourself. Are you in need of a nice refreshing beverage: https://www.whiteclaw.com/', 'Daniel, I know I might look like a bot on the outside, but I could really use some Whiteclaw right now...', 'POSITIVE VIBES ONLY, DANIEL', 'They say alcohol is a depressent, but then I think about that time Daniel broke a table and I am filled with happiness.']
+                send_message(random.choice(msgs))
 
         elif data['name'] == 'kturnt':
             if(random.random() < .8):
@@ -113,7 +113,7 @@ def webhook():
 
         elif data['name'] == 'Notorious FTS🐍':
             if(random.random() < .6):
-                msg = 'Natalie, shouldn’t you be climbing right now?'
+                msg = 'Natalie, shouldn’t you be climbing right now?']
                 send_message(msg)
 
         elif data['name'] == 'Oahn Nguyen':
