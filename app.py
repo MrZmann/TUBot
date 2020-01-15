@@ -18,8 +18,9 @@ def webhook():
         if(random.random() < .3):
             beginning = ["You are ", "Keep being "]
             end = ["awesome!", "cool :)", "beautiful xoxo", "lovely <3", "wonderful", "magnificent", "marvelous", "incredible", "brilliant", "fine ;)", "outstanding", "sensational", "terrific", "wondrous", "divine", "groovy", "an amazing friend :)", "one smart cookie","perfect", "one of a kind", "a great example to our section, a true symbol of moral fortitude and compassion", "the reason someone smiles today", "extraordinary", "something special", "the true hero among us", "inspirational", "the TUBA! player we all aspire to be", "my spirit animal", "dandy"]
-            send_message("HEY {}".format(data['name'])
-            send_message(random.choice(beginning) + random.choice(end))
+            send_message("HEY {}".format(data['name']))
+            toSend = random.choice(beginning) + random.choice(end)
+            send_message(toSend)
 
         if('rehearsal' in data['text'].lower()):
             if(random.random() < .9):
@@ -113,7 +114,7 @@ def webhook():
 
         elif data['name'] == 'Notorious FTS🐍':
             if(random.random() < .6):
-                msg = 'Natalie, shouldn’t you be climbing right now?']
+                msg = 'Natalie, shouldn’t you be climbing right now?'
                 send_message(msg)
 
         elif data['name'] == 'Oahn Nguyen':
