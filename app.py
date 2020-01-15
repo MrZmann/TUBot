@@ -15,6 +15,11 @@ def webhook():
 
     
     if(data['name'] != 'TUBot!'):
+        if(random.random() < .3):
+            beginning = ["You are ", "Keep being "]
+            end = ["awesome!", "cool :)", "beautiful xoxo", "lovely <3", "wonderful", "magnificent", "marvelous", "incredible", "brilliant", "fine ;)", "outstanding", "sensational", "terrific", "wondrous", "divine", "groovy", "an amazing friend :)", "one smart cookie","perfect", "one of a kind", "a great example to our section, a true symbol of moral fortitude and compassion", "the reason someone smiles today", "extraordinary", "something special", "the true hero among us", "inspirational", "the TUBA! player we all aspire to be", "my spirit animal"]
+            send_message("HEY {}".format(data['name'])
+            send_message(random.choice(beginning) + random.choice(end))
 
         if('rehearsal' in data['text'].lower()):
             if(random.random() < .9):
@@ -25,11 +30,15 @@ def webhook():
             msgs = ["Bitch? Did you mean Ryan?", "Did you say bitch? SorryRyan is not currently available", "Watch your fucking language, bitch!", "@Ryan Campbell"]
             send_message(random.choice(msgs))
 
+        if('bean' in data['text'].lower()):
+            msgs = ['BEANS!', "Where the beans at? @Alison Van Alen", "CODE BROWN, I REPEAT CODE BROWN. THIS IS A BEAN ALERT", "'Beans,' I reflect fondly. 'The best thing that's happened to humanity since Whiteclaw...'", "According to Urban Dictionary, a bean is a \"CRAZY, fun loving person... guarenteed to make you smile\" @Alison", "You know Dasher and Dancer and Prancer and Vixen. Comet and Cupid and Donner and Blitzin. But do you recall the most wonderful vegetable of all? BEANS!", "Beans, like peanuts are LEGUMES!", "You know what they say: a bean a day keeps the directors away!"]
+            send_message(random.choice(msgs))
+
         if any(x in data['text'].lower() for x in ['hannah', 'galus','gall']):
                 if(random.random() < .8):
-                    send_message("Rub-a-dub-dub, three directors in a tub")
+                    send_message("Rub-a-dub-dub, three DIRECTORS in a tub")
         if('climb' in data['text'].lower()):
-            msgs = ["Brb! Gotta grab my chalk bag", "What's more fun than rock climbing? I'll wait...", "@Sam I won't be able to make it to rehearsal this semester, gotta go climb", "Did you know rock climbing is one of the only known treatments for PTSD (Post Traumatic Segmenting Disorder)?", "Have you ever looked up rock climbing on urban dictionary? Don't...", "Did someone say climb @Natalie ?"]
+            msgs = ["Brb! Gotta grab my chalk bag", "What's more fun than rock climbing? I'll wait...", "@Sam I won't be able to make it to rehearsal this semester, gotta go climb", "Did you know rock climbing is one of the only known treatments for PTSD (Post Traumatic Segmenting Disorder)?", "Have you ever looked up rock climbing on urban dictionary? Don't...", "Did someone say climb? @Natalie"]
             send_message(random.choice(msgs))
 
         if('whiteclaw' in data['text'].lower()):
@@ -65,11 +74,15 @@ def webhook():
         elif(random.random < .01):
             send_message("OU CAN LICK MY BALLS")
 
-        elif data['name'] == 'Great leader of our section and our nation':
+        if data['name'] == 'Great leader of our section and our nation':
             if(random.random() < .7):
-                msg = 'Bugga to all of y\'all'
-                send_message(msg)
+                msgs = ['Criminal gangg', 'Yes sir yes sir', 'Bugga to all of y\'all', '*CLICK*', 'Suck my deck', 'Y\'all are bugs', 'Bugger']
+                send_message(random.choice(msgs))
 
+        elif data['name'] == 'Alison Van Alen':
+            if(random.random() < .7):
+                msgs = ['BEANS', 'Beans beans a magical fruit, the more you eat the more you toot. The more you toot the better you feel, so eat beans for every meal!']
+                send_message(random.choice(msgs))
 
         elif data['name'] == 'Daniel Weber':
             if(random.random() < .4):
@@ -113,7 +126,7 @@ def webhook():
                 send_message(msg)
 
         elif data['name'] == 'Rafael Garcia':
-            if(random.random() < .6):
+            if(random.random() < .7):
                 send_message("CHICKEN")
 
         elif data['name'] == 'Ryan Campbell':
@@ -125,7 +138,7 @@ def webhook():
 
         elif data['name'] == 'Sam Pollack':
             if(random.random() < .7):
-                msg = 'The “head” section leader has issued a message. Does @Great leader of our section and our nation approve?'
+                msg = 'The “head” section leader has issued a message: "{}." Does @Great leader of our section and our nation approve?'.format(data['text'])
                 send_message(msg)
 
         elif data['name'] == 'Third Alison':
@@ -136,7 +149,7 @@ def webhook():
                     send_message("Where’s my horse at, yeah! Where’s my horse at?")
 
         elif data['name'] == 'Travis Mongoven':
-            if(random.random() < .6):
+            if(random.random() < .7):
                 if(random.random() < .5):
                     send_message('I would like to take a minute to remind everyone that new members do not have GroupMe priveliges @Travis')
                 else:
@@ -149,7 +162,7 @@ def webhook():
         elif data['name'] == 'You\'re Graphic Design Is My Passion':
             if(random.random() < .7):
                 if(random.random() < .5):
-                    send_message('<3 @Josh')
+                    send_message('<3 <3 <3 @Josh')
                 else:
                     send_message('SNOOOORRRLLAXXX')
 
