@@ -17,7 +17,7 @@ def webhook():
     if(data['name'] != 'TUBot!'):
 
         if('rehearsal' in data['text'].lower()):
-            if(random.random < .8):
+            if(random.random() < .8):
                 msgs = ['REHEARSAL? NO THANKS!', 'Sorry when is rehearsal again? I\'m pretty sure there\'s a union mandated bathroom break at that time', 'Pfft, rehearsal? Bug right off', 'Wait did you say Rehearsal? Sorry I don\'t know who that is...', 'Yeah, hate to break it to you. We don\'t rehearse around these parts.', 'I wish I could just kick anyone who mentioned rehearsals straight from the groupchat...', 'Please do not say that word, it gives me anxiety', '*shudder*']
                 send_message(random.choice(msgs))
 
