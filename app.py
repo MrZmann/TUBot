@@ -17,8 +17,8 @@ def webhook():
     if(data['name'] != 'TUBot!'):
         if(random.random() < .3):
             beginning = ["You are ", "Keep being "]
-            end = ["awesome!", "cool :)", "beautiful xoxo", "lovely <3", "wonderful", "magnificent", "marvelous", "incredible", "brilliant", "fine ;)", "outstanding", "sensational", "terrific", "wondrous", "divine", "groovy", "an amazing friend :)", "one smart cookie","perfect", "one of a kind", "a great example to our section, a true symbol of moral fortitude and compassion", "the reason someone smiles today", "extraordinary", "something special", "the true hero among us", "inspirational", "the TUBA! player we all aspire to be", "my spirit animal", "dandy"]
-            send_message("HEY {}".format(data['name']))
+            end = ["awesome!", "cool :)", "beautiful xoxo", "lovely <3", "wonderful.", "magnificent.", "marvelous.", "incredible.", "brilliant.", "fine ;)", "outstanding.", "sensational.", "terrific.", "wondrous.", "divine.", "groovy.", "an amazing friend :)", "one smart cookie.","perfect.", "one of a kind.", "a great example to our section, a true symbol of moral fortitude and compassion.", "the reason someone smiles today.", "extraordinary.", "something special.", "the true hero among us.", "inspirational.", "the TUBA! player we all aspire to be.", "my spirit animal.", "dandy.", "a @Ray of sunshine."]
+            send_message("{} {}".format(random.choice(["HEY", "Heyo!", "Howdy", "Hola","Wassupp","Dearest", "Oh magnificient"]),data['name']))
             toSend = random.choice(beginning) + random.choice(end)
             send_message(toSend)
 
@@ -28,7 +28,7 @@ def webhook():
                 send_message(random.choice(msgs))
 
         if('bitch' in data['text'].lower()):
-            msgs = ["Bitch? Did you mean Ryan?", "Did you say bitch? SorryRyan is not currently available", "Watch your fucking language, bitch!", "@Ryan Campbell"]
+            msgs = ["Bitch? Did you mean Ryan?", "Did you say bitch? Sorry Ryan is not currently available", "Watch your fucking language, bitch!", "@Ryan Campbell"]
             send_message(random.choice(msgs))
 
         if('bean' in data['text'].lower()):
@@ -145,8 +145,8 @@ def webhook():
         
         elif data['name'] == 'Notorious FTS🐍':
             if(random.random() < .6):
-                msg = 'Natalie, shouldn’t you be climbing right now?'
-                send_message(msg)
+                msgs = ['Natalie, shouldn\'t you be climbing right now?', 'What are you doing on GroupMe rn @Natalie? I think it\'s about time for some Words With Friends...']
+                send_message(random.choice(msgs))
         
         elif data['name'] == 'Oahn Nguyen':
             msg = "*giggle* @Oahn"
@@ -160,12 +160,18 @@ def webhook():
         elif data['name'] == 'Rafael Garcia':
             if(random.random() < .7):
                 send_message("CHICKEN")
-        
+
         elif data['name'] == 'Blonde Farquaad':
             if(random.random() < .7):
                 msgs = ['https://photos.app.goo.gl/ejK3HWFZ6FnkTTji6', 'Zzzz https://photos.app.goo.gl/9r7c5RBuoVn4oQjS7', 'I got my bot-eyes on you @Ray https://photos.app.goo.gl/2TjmVJtkoQR2G3rW9']
                 send_message(random.choice(msgs))
+                
+        elif data['name'] == 'Reed Zimmermann':
+            if(random.random() < .5):
+                msgs = ['SHUT UP, DAAAD @Reed', 'Leave this groupchat and go climb or something @Reed :P']
+                send_message(random.choice(msgs))
         
+
         elif data['name'] == 'Ryan Campbell':
             if(random.random() < .8):
                 if(random.random() < .7):
@@ -187,11 +193,9 @@ def webhook():
         
         elif data['name'] == 'Travis Mongoven':
             if(random.random() < .7):
-                if(random.random() < .5):
-                    send_message('I would like to take a minute to remind everyone that new members do not have GroupMe priveliges @Travis')
-                else:
-                    send_message('Don’t forget to register for Spring 2020 classes @Travis')
-        
+                msgs = ['Coward @Travis', 'Travis, don\'t forget to register for Spring 2020 classes!', ':P @Travis', 'Oh? https://photos.app.goo.gl/v7bSXwZK8nfCzuGh7', 'Oh? https://photos.app.goo.gl/3xG3qa2JMLeKxovA8', 'OM NOM NOM https://photos.app.goo.gl/yp8N6PTvSkLZtfpx7']
+                send_message(random.choice(msgs))   
+
         elif data['name'] == 'William Treadwell':
             if(random.random() < .7):
                 send_message('FEED ME MEMES @William Treadwell')
