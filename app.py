@@ -140,8 +140,8 @@ def webhook():
         
         elif data['name'] == 'Mr. SNAFU FUBAR Sir':
             if(random.random() < .6):
-                msg = 'The military has infiltrated this group chat. The great Trevor Smariga has spoken. Would you like to rally the militia @Sam Pollack?'
-                send_message(msg)
+                msgs = ['The military has infiltrated this group chat. The great Trevor Smariga has spoken. Would you like to rally the militia @Sam Pollack?', 'Hello, snake @Trevor']
+                send_message(random.choice(msgs))
         
         elif data['name'] == 'Notorious FTS🐍':
             if(random.random() < .6):
