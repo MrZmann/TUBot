@@ -15,9 +15,9 @@ def webhook():
 
     
     if(data['name'] != 'TUBot!'):
-        if(random.random() < .3):
+        if(random.random() < .01):
             beginning = ["You are ", "Keep being "]
-            end = ["awesome!", "cool :)", "beautiful xoxo", "lovely <3", "wonderful.", "magnificent.", "marvelous.", "incredible.", "brilliant.", "fine ;)", "outstanding.", "sensational.", "terrific.", "wondrous.", "divine.", "groovy.", "an amazing friend :)", "one smart cookie.","perfect.", "one of a kind.", "a great example to our section, a true symbol of moral fortitude and compassion.", "the reason someone smiles today.", "extraordinary.", "something special.", "the true hero among us.", "inspirational.", "the TUBA! player we all aspire to be.", "my spirit animal.", "dandy.", "a @Ray of sunshine."]
+            end = ["awesome!", "cool :)", "beautiful xoxo", "lovely <3", "fine ;)", "divine.", "groovy.", "an amazing friend :)", "one smart cookie.","perfect.", "one of a kind.", "a great example to our section, a true symbol of moral fortitude and compassion.", "the reason someone smiles today.", "something special.", "the true hero among us.", "inspirational.", "the TUBA! player we all aspire to be.", "my spirit animal.", "dandy.", "a @Ray of sunshine."]
             send_message("{} {}".format(random.choice(["HEY", "Heyo!", "Howdy", "Hola","Wassupp","Dearest", "Oh magnificient"]),data['name']))
             toSend = random.choice(beginning) + random.choice(end)
             send_message(toSend)
