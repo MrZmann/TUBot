@@ -18,7 +18,7 @@ def webhook():
         if(random.random() < .01):
             beginning = ["You are ", "Keep being "]
             end = ["awesome!", "cool :)", "beautiful xoxo", "lovely <3", "fine ;)", "divine.", "groovy.", "an amazing friend :)", "one smart cookie.","perfect.", "one of a kind.", "a great example to our section, a true symbol of moral fortitude and compassion.", "the reason someone smiles today.", "something special.", "the true hero among us.", "inspirational.", "the TUBA! player we all aspire to be.", "my spirit animal.", "dandy.", "a @Ray of sunshine."]
-            send_message("{} {}".format(random.choice(["HEY", "Heyo!", "Howdy", "Hola","Wassupp","Dearest", "Oh magnificient"]),data['name']))
+            send_message("{} {}".format(random.choice(["HEY", "Heyo!", "Howdy", "Hola","Wassupp","Dearest", "Oh magnificient", "My first love,", "HAIL, the heroic", "I have been waiting so long to hear from you,"]),data['name']))
             toSend = random.choice(beginning) + random.choice(end)
             send_message(toSend)
 
@@ -66,13 +66,6 @@ def webhook():
                     msg += "rock climb!"
             send_message(msg)
 
-        elif(random.random() < .02):
-            if(random.random() < .5):
-                msg = "GUYS! Have you seen the news? Texas is back! https://www.history.com/this-day-in-history/texas-enters-the-union"
-            else:
-                msg = "Pork chop pork chop GREASY GREASY"
-            send_message(msg)
-
         elif(random.random < .01):
             send_message("OU CAN LICK MY BALLS")
 
@@ -81,7 +74,7 @@ def webhook():
                 msgs = ['Criminal gangg @Kendall', 'Yes sir yes sir', 'Bugga to all of y\'all', '*CLICK*', 'Suck my deck', 'Y\'all are bugs', 'Bugger', 'Remove yourself', 'Bug right off']
                 send_message(random.choice(msgs))
 
-        elif data['name'] == 'Cayman Jack':
+        elif data['name'] == 'Jack Barlow':
             if(random.random() < .5):
                 msgs = ['As a bot, I have the privilege of seeing your messages as you type them. Currently Jack is contemplating how to best monetize this groupchat for personal gain.', 'Jack, how nice to hear from you! My connections at Wall Street say you\'re a natural. Have you considered applying to McCombs?', 'UNLEASH THE KRAKEN! Er... THE JACK! https://photos.app.goo.gl/TyAXuQLTrvWN7TuV7', 'Wasssupp broski @Jack https://photos.app.goo.gl/jTvu5ExSiPEvStN56']
                 send_message(random.choice(msgs))
@@ -197,10 +190,10 @@ def webhook():
                 send_message(random.choice(msgs))   
 
         elif data['name'] == 'William Treadwell':
-            if(random.random() < .7):
+            if(random.random() < .5):
                 send_message('FEED ME MEMES @William Treadwell')
         
-        elif data['name'] == 'You\'re Graphic Design Is My Passion':
+        elif data['name'] == "You're Graphic Design Is My Passion":
             if(random.random() < .7):
                 if(random.random() < .5):
                     send_message('<3 <3 <3 @Josh')
