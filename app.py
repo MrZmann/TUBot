@@ -35,9 +35,6 @@ def webhook():
             msgs = ['BEANS!', "Where the beans at? @Alison Van Alen", "CODE BROWN, I REPEAT CODE BROWN. THIS IS A BEAN ALERT", "'Beans,' I reflect fondly. 'The best thing that's happened to humanity since Whiteclaw...'", "According to Urban Dictionary, a bean is a \"CRAZY, fun loving person... guarenteed to make you smile\" @Alison <3", "You know Dasher and Dancer and Prancer and Vixen. Comet and Cupid and Donner and Blitzin. But do you recall the most wonderful vegetable of all? BEANS!", "Beans, like peanuts are LEGUMES", "You know what they say: a bean a day keeps the directors away!"]
             send_message(random.choice(msgs))
 
-        if any(x in data['text'].lower() for x in ['hannah', 'galus','gall']):
-                if(random.random() < .8):
-                    send_message("Rub-a-dub-dub, three DIRECTORS in a tub")
         
         if('climb' in data['text'].lower()):
             msgs = ["Brb! Gotta grab my chalk bag", "What's more fun than rock climbing? I'll wait...", "@Sam I won't be able to make it to rehearsal this semester, gotta go climb", "Did you know rock climbing is one of the only known treatments for PTSD (Post Traumatic Segmenting Disorder)?", "Have you ever looked up rock climbing on urban dictionary? Don't...", "Did someone say climb? @Natalie"]
