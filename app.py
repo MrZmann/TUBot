@@ -137,7 +137,11 @@ def webhook():
             if(random.random() < .6):
                 msgs = ['Natalie, shouldn\'t you be climbing right now?', 'What are you doing on GroupMe rn @Natalie? I think it\'s about time for some Words With Friends...']
                 send_message(random.choice(msgs))
-        
+       
+        elif data['name'] == 'Noah Feinstein':
+            msg = "NOOAAAHHH"
+            send_message(msg)
+
         elif data['name'] == 'Oahn Nguyen':
             msg = "*giggle* @Oahn"
             send_message(msg)
