@@ -139,8 +139,8 @@ def webhook():
                 send_message(random.choice(msgs))
        
         elif data['name'] == 'Noah Feinstein':
-            msg = "NOOAAAHHH"
-            send_message(msg)
+            msgs = ["NOOAAAHHH", "Freshman REPRESENT!", "https://photos.app.goo.gl/EM1TBKg4HR56SBki7"]
+            send_message(random.choice(msgs))
 
         elif data['name'] == 'Oahn Nguyen':
             msg = "*giggle* @Oahn"
